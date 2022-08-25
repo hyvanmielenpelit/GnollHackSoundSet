@@ -8,9 +8,9 @@ GnollHack FMOD project file and assets.
 2. Install [FMOD Studio](https://www.fmod.com/) **2.00.09**. *(Please use this exact version.)*
 3. Open **GnollHackSoundset.fspro** project in the main directory of the GnollHackSoundSet repository using **FMOD Studio**.
 4. Select **File → Build**.
-5. Built Sound Banks will appear in the `Build` directory of the GnollHackSoundSet repository.
+5. Built sound banks will appear in the `Build` directory of the GnollHackSoundSet repository.
 
-There are two flavors of sound banks: **Desktop** and **mobile**. They will be in their respective subdirectories `Desktop` and `Mobile` under the `Build directory`. There are 4 sound banks in each directory:
+There are two flavors of sound banks: **desktop** and **mobile**. They will be in their respective subdirectories `Desktop` and `Mobile` under the `Build` directory. There are 4 sound banks in each directory:
     - Master.bank
     - Master.strings.bank
     - Intro.bank
