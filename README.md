@@ -12,10 +12,10 @@ GnollHack FMOD project file and assets.
 
 There are two flavors of sound banks: **desktop** and **mobile**. They will be in their respective subdirectories `Desktop` and `Mobile` under the `Build` directory. There are 4 sound banks in each directory:
 
-    1. Master.bank
-    2. Master.strings.bank
-    3. Intro.bank
-    4. Auxiliary.bank
+- Master.bank
+- Master.strings.bank
+- Intro.bank
+- Auxiliary.bank
 
 The **desktop banks** are meant for the **desktop version** of GnollHack (Windows) and the **mobile banks** are meant for the **Android and iOS versions** of the game.
 
