@@ -29,5 +29,6 @@ Updating the repository is done using [Visual Studio Code](https://code.visualst
 
 1. Open the GnollHackSoundSet folder with **Visual Studio Code** *(File → Open Folder)*.
 2. Copy new or updated files to the repository using  **File Explorer**.
-3. Commit changes using **Visual Studio Code** and the **Source Control View**.
-4. Push or sync changes to GitHub using **Visual Studio Code** and the **Source Control View**.
+3. Update the FMOD project using **FMOD Studio**.
+4. Commit changes using **Visual Studio Code** and the **Source Control View**.
+5. Push or sync changes to GitHub using **Visual Studio Code** and the **Source Control View**.
