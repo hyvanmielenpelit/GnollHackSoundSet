@@ -25,7 +25,7 @@ The **desktop banks** are meant for the **desktop version** of GnollHack (Window
 
  ## Updating Repository
 
-Updating the repository is done using [Visual Studio Code](https://code.visualstudio.com/).
+Updating the repository is done using [Visual Studio Code](https://code.visualstudio.com/) and **FMOD Studio**.
 
 1. Open the GnollHackSoundSet folder with **Visual Studio Code** *(File → Open Folder)*.
 2. Copy new or updated files to the repository using  **File Explorer**.
