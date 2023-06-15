@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4f7703a1-1b8d-4850-9cd3-6bbbcd8b4ed5}">
 		<property name="name">
 			<value>For You Start</value>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{50b3abf0-12c5-4859-89ce-99732b5268c9}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{a38263b8-236b-4aa8-9642-d5b313207533}</destination>
 		</relationship>
@@ -54,11 +57,18 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{a8561fdf-1c5d-4b56-9776-b0006c9fd7c8}" />
-	<object class="MarkerTrack" id="{d7a9c9c7-afc1-44dd-871c-7ceeb81ae98f}" />
+	<object class="MarkerTrack" id="{d7a9c9c7-afc1-44dd-871c-7ceeb81ae98f}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{d6307d65-9bfd-40ac-b96c-538f357ae118}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
-			<destination>{641657bf-d04f-42d0-a641-5a6c9ad925ad}</destination>
 			<destination>{a4ecdd0e-4e22-4d1e-af3e-c737341cf568}</destination>
+			<destination>{641657bf-d04f-42d0-a641-5a6c9ad925ad}</destination>
 			<destination>{bae20c55-502f-4cc9-8f94-c7c69b8966ff}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
@@ -68,8 +78,8 @@
 	<object class="Timeline" id="{c3ce4a85-3c69-420c-907f-eef261781813}" />
 	<object class="ParameterProxy" id="{82b1c6bc-0b9d-4291-bce3-be6f745aaccc}">
 		<relationship name="modules">
-			<destination>{641657bf-d04f-42d0-a641-5a6c9ad925ad}</destination>
 			<destination>{a4ecdd0e-4e22-4d1e-af3e-c737341cf568}</destination>
+			<destination>{641657bf-d04f-42d0-a641-5a6c9ad925ad}</destination>
 			<destination>{bae20c55-502f-4cc9-8f94-c7c69b8966ff}</destination>
 		</relationship>
 		<relationship name="preset">
@@ -93,14 +103,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{9e8d131d-1ed6-49ac-96a7-23fba360bd37}" />
-	<object class="EventSound" id="{641657bf-d04f-42d0-a641-5a6c9ad925ad}">
-		<relationship name="parameters">
-			<destination>{f8889854-c6cf-4954-a612-e847629c7bd1}</destination>
-		</relationship>
-		<relationship name="event">
-			<destination>{2bd9f20b-478b-4b50-9ab4-87f46e64cdc1}</destination>
-		</relationship>
-	</object>
 	<object class="EventSound" id="{a4ecdd0e-4e22-4d1e-af3e-c737341cf568}">
 		<property name="start">
 			<value>1</value>
@@ -110,6 +112,14 @@
 		</relationship>
 		<relationship name="event">
 			<destination>{05bc1613-22d1-430a-a346-5bc1196b7853}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{641657bf-d04f-42d0-a641-5a6c9ad925ad}">
+		<relationship name="parameters">
+			<destination>{f8889854-c6cf-4954-a612-e847629c7bd1}</destination>
+		</relationship>
+		<relationship name="event">
+			<destination>{2bd9f20b-478b-4b50-9ab4-87f46e64cdc1}</destination>
 		</relationship>
 	</object>
 	<object class="EventSound" id="{bae20c55-502f-4cc9-8f94-c7c69b8966ff}">
@@ -144,14 +154,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{70d3793f-07be-47c8-9e6b-9f323e3a0e77}" />
 	<object class="MixerBusFader" id="{e1c21056-68eb-4d43-8460-83291e380898}" />
-	<object class="ParameterProperty" id="{f8889854-c6cf-4954-a612-e847629c7bd1}">
-		<relationship name="parameter">
-			<destination>{de3b9f51-e8b8-49fd-a434-b0bacd635f5e}</destination>
-		</relationship>
-	</object>
 	<object class="ParameterProperty" id="{e8fe1e8e-6683-4141-8646-d153a822d2f9}">
 		<relationship name="parameter">
 			<destination>{d0feb0b1-0ad7-4c9d-a43c-3f235242f223}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProperty" id="{f8889854-c6cf-4954-a612-e847629c7bd1}">
+		<relationship name="parameter">
+			<destination>{de3b9f51-e8b8-49fd-a434-b0bacd635f5e}</destination>
 		</relationship>
 	</object>
 	<object class="ParameterProperty" id="{3b8870cc-128f-4021-a3a5-0528e4901377}">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{954148cf-7f92-4f64-9963-8fd9f86f76e1}">
 		<property name="name">
 			<value>Caveman</value>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{8b454623-ebff-4ade-8e2d-5fa9b7f2e4d6}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{e927f948-f70b-4cab-aeaa-38c7e8b4c92d}</destination>
 		</relationship>
@@ -54,14 +57,21 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{4dc03be4-6b6f-4d35-bf97-10db61c944cb}" />
-	<object class="MarkerTrack" id="{2bed020b-455f-4578-b069-a3561c085603}" />
+	<object class="MarkerTrack" id="{2bed020b-455f-4578-b069-a3561c085603}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{10221cf3-4056-40f4-bbc8-6ee211730e20}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
+			<destination>{82743173-eca7-4358-a798-79094b2e9cf9}</destination>
 			<destination>{dbc7cc23-c43a-4869-b395-12314ee85b78}</destination>
 			<destination>{b2092d73-0353-4f46-a470-f4a4ed4d3c5d}</destination>
-			<destination>{82743173-eca7-4358-a798-79094b2e9cf9}</destination>
-			<destination>{2716b196-ab75-4f2b-ac4a-beb18f21a0ec}</destination>
 			<destination>{00460669-ffc3-429b-bf8b-deaf9fc794ef}</destination>
+			<destination>{2716b196-ab75-4f2b-ac4a-beb18f21a0ec}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{4230853a-eca4-4c27-b541-0f88fbc5d197}</destination>
@@ -70,9 +80,9 @@
 	<object class="Timeline" id="{ed7e3fc4-6b00-48e4-8d52-ec973a628ca5}" />
 	<object class="ParameterProxy" id="{997c040a-9075-48a0-be7c-703e935b2497}">
 		<relationship name="modules">
+			<destination>{82743173-eca7-4358-a798-79094b2e9cf9}</destination>
 			<destination>{dbc7cc23-c43a-4869-b395-12314ee85b78}</destination>
 			<destination>{b2092d73-0353-4f46-a470-f4a4ed4d3c5d}</destination>
-			<destination>{82743173-eca7-4358-a798-79094b2e9cf9}</destination>
 			<destination>{2716b196-ab75-4f2b-ac4a-beb18f21a0ec}</destination>
 			<destination>{00460669-ffc3-429b-bf8b-deaf9fc794ef}</destination>
 		</relationship>
@@ -97,11 +107,18 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{810efc60-e8ed-469f-9735-8a0063465b9c}" />
+	<object class="SingleSound" id="{82743173-eca7-4358-a798-79094b2e9cf9}">
+		<property name="start">
+			<value>4</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a5afe19b-8b37-48f8-bfd5-71bf8dabf055}</destination>
+		</relationship>
+	</object>
 	<object class="EventSound" id="{dbc7cc23-c43a-4869-b395-12314ee85b78}">
 		<property name="start">
 			<value>2</value>
 		</property>
-		<property name="name" />
 		<relationship name="event">
 			<destination>{0138de52-9d49-45e7-a070-299f84cffc41}</destination>
 		</relationship>
@@ -114,12 +131,12 @@
 			<destination>{fd587a74-439e-45bf-85da-17404c6a734b}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{82743173-eca7-4358-a798-79094b2e9cf9}">
+	<object class="EventSound" id="{00460669-ffc3-429b-bf8b-deaf9fc794ef}">
 		<property name="start">
-			<value>4</value>
+			<value>60</value>
 		</property>
-		<relationship name="audioFile">
-			<destination>{a5afe19b-8b37-48f8-bfd5-71bf8dabf055}</destination>
+		<relationship name="event">
+			<destination>{428eeac1-434b-41dd-a66e-426fbc884e84}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{2716b196-ab75-4f2b-ac4a-beb18f21a0ec}">
@@ -128,14 +145,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{dd7db294-a43a-4a14-9aa0-0b576cba3ff5}</destination>
-		</relationship>
-	</object>
-	<object class="EventSound" id="{00460669-ffc3-429b-bf8b-deaf9fc794ef}">
-		<property name="start">
-			<value>60</value>
-		</property>
-		<relationship name="event">
-			<destination>{428eeac1-434b-41dd-a66e-426fbc884e84}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{4230853a-eca4-4c27-b541-0f88fbc5d197}">

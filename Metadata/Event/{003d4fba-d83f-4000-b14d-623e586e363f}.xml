@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{003d4fba-d83f-4000-b14d-623e586e363f}">
 		<property name="name">
 			<value>Advice</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{e151f909-c440-40bc-ba60-13554d57db68}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{a07db98d-f407-4a15-acd5-af7dff3cddd5}</destination>
 		</relationship>
@@ -60,13 +63,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{6875bafc-75bd-4d63-a89d-bf9537213f9d}" />
-	<object class="MarkerTrack" id="{9edc5d74-9d11-40b6-94bc-b1f246e19b8f}" />
+	<object class="MarkerTrack" id="{9edc5d74-9d11-40b6-94bc-b1f246e19b8f}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{db7c5d1a-520e-4150-a9a5-ce972b701417}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
+			<destination>{ef4307b6-193d-4f6f-97c6-5939b2a6f5e7}</destination>
+			<destination>{b3ebf375-19b3-472e-9bbc-3fb9f1d4db2c}</destination>
 			<destination>{8d4501a7-d116-47a1-82bb-37f11f021650}</destination>
 			<destination>{bc02d64a-9e9a-4a4d-afa8-8b1eb9fbd4bf}</destination>
-			<destination>{b3ebf375-19b3-472e-9bbc-3fb9f1d4db2c}</destination>
-			<destination>{ef4307b6-193d-4f6f-97c6-5939b2a6f5e7}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{d077abe2-2064-41ab-8d4e-870d51f0c720}</destination>
@@ -75,10 +85,10 @@
 	<object class="Timeline" id="{f1568fec-0653-4a82-a635-6490128aa378}" />
 	<object class="ParameterProxy" id="{2ea113f4-50c6-45d9-b772-e49938c27df1}">
 		<relationship name="modules">
+			<destination>{ef4307b6-193d-4f6f-97c6-5939b2a6f5e7}</destination>
+			<destination>{b3ebf375-19b3-472e-9bbc-3fb9f1d4db2c}</destination>
 			<destination>{8d4501a7-d116-47a1-82bb-37f11f021650}</destination>
 			<destination>{bc02d64a-9e9a-4a4d-afa8-8b1eb9fbd4bf}</destination>
-			<destination>{b3ebf375-19b3-472e-9bbc-3fb9f1d4db2c}</destination>
-			<destination>{ef4307b6-193d-4f6f-97c6-5939b2a6f5e7}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{97b9dc54-1fbb-49ce-9ecb-6c59fd1751a8}</destination>
@@ -101,6 +111,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{b420de2f-ddc3-498e-8bd1-b2f7960c442b}" />
+	<object class="SingleSound" id="{ef4307b6-193d-4f6f-97c6-5939b2a6f5e7}">
+		<property name="start">
+			<value>3</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{566e9a81-1c45-40d3-b52e-f1ef9144ed9c}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{b3ebf375-19b3-472e-9bbc-3fb9f1d4db2c}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{62f7c506-2dbf-49fb-8924-cc6831cf8c2a}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{8d4501a7-d116-47a1-82bb-37f11f021650}">
 		<relationship name="audioFile">
 			<destination>{0e11fab1-71d7-43f8-a291-8f84783d09be}</destination>
@@ -112,22 +138,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{43c262da-1106-4f87-a4cb-d28077b5fe1f}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{b3ebf375-19b3-472e-9bbc-3fb9f1d4db2c}">
-		<property name="start">
-			<value>2</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{62f7c506-2dbf-49fb-8924-cc6831cf8c2a}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{ef4307b6-193d-4f6f-97c6-5939b2a6f5e7}">
-		<property name="start">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{566e9a81-1c45-40d3-b52e-f1ef9144ed9c}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{d077abe2-2064-41ab-8d4e-870d51f0c720}">

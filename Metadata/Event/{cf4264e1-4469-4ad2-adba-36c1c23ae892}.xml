@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{cf4264e1-4469-4ad2-adba-36c1c23ae892}">
 		<property name="name">
 			<value>Nested Event 2</value>
@@ -41,6 +41,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{3c5da62e-eb51-46e4-8d18-4152364c8000}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{83e09c1e-3f7d-442e-ac25-eb724229569b}</destination>
 		</relationship>
@@ -54,12 +57,19 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{121d6871-200f-45a9-9829-9e04efcba286}" />
-	<object class="MarkerTrack" id="{965f458e-bc97-443a-88ee-00ecb9f110bf}" />
+	<object class="MarkerTrack" id="{965f458e-bc97-443a-88ee-00ecb9f110bf}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{85b11e5b-8657-45b0-8ebb-ab24cb2103ac}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
 			<destination>{8ded01c6-3f0f-4212-af1f-dde77a2a0348}</destination>
-			<destination>{85cdc057-1014-4ebb-b7ae-9bf1ec8eae63}</destination>
 			<destination>{670a8c52-2a1f-4734-b006-c198895ada33}</destination>
+			<destination>{85cdc057-1014-4ebb-b7ae-9bf1ec8eae63}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{30174697-568e-48ba-a783-86951796a707}</destination>
@@ -69,8 +79,8 @@
 	<object class="ParameterProxy" id="{f0b1e457-a22c-40e2-8780-21d0129e4fdd}">
 		<relationship name="modules">
 			<destination>{8ded01c6-3f0f-4212-af1f-dde77a2a0348}</destination>
-			<destination>{85cdc057-1014-4ebb-b7ae-9bf1ec8eae63}</destination>
 			<destination>{670a8c52-2a1f-4734-b006-c198895ada33}</destination>
+			<destination>{85cdc057-1014-4ebb-b7ae-9bf1ec8eae63}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{1b864b9f-841a-49c7-814c-2349670e0776}</destination>
@@ -101,17 +111,17 @@
 			<destination>{23d6460f-9460-4636-a1aa-2f108f412de8}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{85cdc057-1014-4ebb-b7ae-9bf1ec8eae63}">
-		<relationship name="audioFile">
-			<destination>{5ac48645-0e2e-4811-95de-c9d42b1b81f9}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{670a8c52-2a1f-4734-b006-c198895ada33}">
 		<property name="start">
 			<value>-1</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{3a43594a-fc4b-4769-ad43-553044a11c55}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{85cdc057-1014-4ebb-b7ae-9bf1ec8eae63}">
+		<relationship name="audioFile">
+			<destination>{5ac48645-0e2e-4811-95de-c9d42b1b81f9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{30174697-568e-48ba-a783-86951796a707}">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{22cab6b2-0a20-43aa-b31f-561ff305708c}">
 		<property name="name">
 			<value>Chat</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{34adcbf8-6058-403b-ac65-56757cd957b9}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{9ab9f81e-35f3-46f4-99a4-c4912bcb47c5}</destination>
 		</relationship>
@@ -60,13 +63,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{64bcc4f9-a3c6-4dff-8691-f58033652d66}" />
-	<object class="MarkerTrack" id="{c5726156-9da7-43ac-9fe4-b36d2befa5c5}" />
+	<object class="MarkerTrack" id="{c5726156-9da7-43ac-9fe4-b36d2befa5c5}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{6845df18-d734-442b-bef7-1a19dbf27dd6}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
-			<destination>{4141610d-ffa6-4cfd-9a29-5b62d82fda27}</destination>
 			<destination>{d46ba452-a22e-40a3-8d2b-3a25112004ab}</destination>
-			<destination>{ce0854f5-3130-4adc-b3aa-77d4eb9ca7c9}</destination>
 			<destination>{19a5bcf1-95c1-4e66-969c-e251b948f786}</destination>
+			<destination>{4141610d-ffa6-4cfd-9a29-5b62d82fda27}</destination>
+			<destination>{ce0854f5-3130-4adc-b3aa-77d4eb9ca7c9}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{815fc41e-3cff-4026-af00-b4ae622fe7f6}</destination>
@@ -75,10 +85,10 @@
 	<object class="Timeline" id="{8a6f3c86-69a2-4ed6-bd5d-7fb5f13ee729}" />
 	<object class="ParameterProxy" id="{ef874bae-0a56-4dfb-a0eb-a68c5458f946}">
 		<relationship name="modules">
-			<destination>{4141610d-ffa6-4cfd-9a29-5b62d82fda27}</destination>
 			<destination>{d46ba452-a22e-40a3-8d2b-3a25112004ab}</destination>
-			<destination>{ce0854f5-3130-4adc-b3aa-77d4eb9ca7c9}</destination>
 			<destination>{19a5bcf1-95c1-4e66-969c-e251b948f786}</destination>
+			<destination>{4141610d-ffa6-4cfd-9a29-5b62d82fda27}</destination>
+			<destination>{ce0854f5-3130-4adc-b3aa-77d4eb9ca7c9}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{97b9dc54-1fbb-49ce-9ecb-6c59fd1751a8}</destination>
@@ -101,14 +111,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{47628ce1-1c74-458d-be8b-5eca57b22939}" />
-	<object class="SingleSound" id="{4141610d-ffa6-4cfd-9a29-5b62d82fda27}">
-		<property name="start">
-			<value>1</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{b534c8f9-3303-45fe-9813-4816f4299c8f}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{d46ba452-a22e-40a3-8d2b-3a25112004ab}">
 		<property name="start">
 			<value>11</value>
@@ -117,17 +119,25 @@
 			<destination>{d5eabab4-9a18-416a-a147-60ba984ae93f}</destination>
 		</relationship>
 	</object>
+	<object class="EventSound" id="{19a5bcf1-95c1-4e66-969c-e251b948f786}">
+		<relationship name="event">
+			<destination>{8a276186-aafd-4e65-a1a0-f80600e0d548}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{4141610d-ffa6-4cfd-9a29-5b62d82fda27}">
+		<property name="start">
+			<value>1</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{b534c8f9-3303-45fe-9813-4816f4299c8f}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{ce0854f5-3130-4adc-b3aa-77d4eb9ca7c9}">
 		<property name="start">
 			<value>15</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{3a2ca0b0-214b-4dcd-9e90-c71a3ac5e6bd}</destination>
-		</relationship>
-	</object>
-	<object class="EventSound" id="{19a5bcf1-95c1-4e66-969c-e251b948f786}">
-		<relationship name="event">
-			<destination>{8a276186-aafd-4e65-a1a0-f80600e0d548}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{815fc41e-3cff-4026-af00-b4ae622fe7f6}">

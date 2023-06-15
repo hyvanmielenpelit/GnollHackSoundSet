@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4b65193c-0bf8-4c52-aa39-02d6f4553f44}">
 		<property name="name">
 			<value>Stone Engrave</value>
@@ -45,6 +45,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{0b2654c6-2cab-4d35-8fcb-974c45bd7e24}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{5466409a-67b0-4168-bc20-d638d98db463}</destination>
 		</relationship>
@@ -61,12 +64,19 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{06e2a5c8-46f4-4748-9e0e-be41e3743f00}" />
-	<object class="MarkerTrack" id="{4a2343fb-a844-469e-a1fc-4144309b0e5a}" />
+	<object class="MarkerTrack" id="{4a2343fb-a844-469e-a1fc-4144309b0e5a}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{560b5d7c-5fd2-407a-bbdb-408c6dfc5252}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
+			<destination>{445c4fa3-7f2c-4b95-b011-ce892b575fe5}</destination>
 			<destination>{e8962825-b08d-4ecd-8d62-ce50cdd7d5e9}</destination>
 			<destination>{f2ba7bd0-ca9e-4497-ac2f-ae6ff9a388f2}</destination>
-			<destination>{445c4fa3-7f2c-4b95-b011-ce892b575fe5}</destination>
 			<destination>{b104d0ac-bcfc-4d57-850a-57572d11c9d3}</destination>
 			<destination>{7e82577d-07ed-4fb3-bd4b-b896926698cc}</destination>
 			<destination>{9e210eea-6cfb-4f17-81cf-b1f0b85e2bc0}</destination>
@@ -111,6 +121,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{cce19993-a171-410a-bb33-dbeda86e59d3}" />
+	<object class="EventSound" id="{445c4fa3-7f2c-4b95-b011-ce892b575fe5}">
+		<property name="start">
+			<value>3</value>
+		</property>
+		<relationship name="event">
+			<destination>{e4e14e5a-9699-4aa1-a61d-a23a49b70aae}</destination>
+		</relationship>
+	</object>
 	<object class="EventSound" id="{e8962825-b08d-4ecd-8d62-ce50cdd7d5e9}">
 		<property name="start">
 			<value>2</value>
@@ -122,14 +140,6 @@
 	<object class="EventSound" id="{f2ba7bd0-ca9e-4497-ac2f-ae6ff9a388f2}">
 		<property name="start">
 			<value>1</value>
-		</property>
-		<relationship name="event">
-			<destination>{e4e14e5a-9699-4aa1-a61d-a23a49b70aae}</destination>
-		</relationship>
-	</object>
-	<object class="EventSound" id="{445c4fa3-7f2c-4b95-b011-ce892b575fe5}">
-		<property name="start">
-			<value>3</value>
 		</property>
 		<relationship name="event">
 			<destination>{e4e14e5a-9699-4aa1-a61d-a23a49b70aae}</destination>

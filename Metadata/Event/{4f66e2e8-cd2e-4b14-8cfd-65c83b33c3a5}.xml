@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{4f66e2e8-cd2e-4b14-8cfd-65c83b33c3a5}">
 		<property name="name">
 			<value>Advice</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{23cdf64e-3bce-4b19-aaf4-64b6c7236e09}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{0bfc27a5-7337-407d-b7e9-af6723fbb5ff}</destination>
 		</relationship>
@@ -60,13 +63,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{8206bd74-369a-4561-9d9b-c52dde3247b2}" />
-	<object class="MarkerTrack" id="{913ba3f1-0dbe-4578-bdbf-17e302d87933}" />
+	<object class="MarkerTrack" id="{913ba3f1-0dbe-4578-bdbf-17e302d87933}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{eaadc0c1-a859-4246-8071-b4f42a115a4a}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
+			<destination>{66fd14f7-d761-4d0a-928c-a93b29ca49d1}</destination>
+			<destination>{5902c172-c7aa-4f42-b62e-176af2b4d89a}</destination>
 			<destination>{e0c3781f-5208-47fd-86a0-53051f4108ea}</destination>
 			<destination>{de9ad46d-efbb-49a6-8607-3cc4e7bda1fa}</destination>
-			<destination>{5902c172-c7aa-4f42-b62e-176af2b4d89a}</destination>
-			<destination>{66fd14f7-d761-4d0a-928c-a93b29ca49d1}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{296f610a-3ffa-4c9f-abd3-431d14f40f21}</destination>
@@ -75,10 +85,10 @@
 	<object class="Timeline" id="{eab50026-f38d-455c-a45a-db9b1af5e40f}" />
 	<object class="ParameterProxy" id="{02403b73-b47a-475d-9752-1d29b7882d7b}">
 		<relationship name="modules">
+			<destination>{66fd14f7-d761-4d0a-928c-a93b29ca49d1}</destination>
+			<destination>{5902c172-c7aa-4f42-b62e-176af2b4d89a}</destination>
 			<destination>{e0c3781f-5208-47fd-86a0-53051f4108ea}</destination>
 			<destination>{de9ad46d-efbb-49a6-8607-3cc4e7bda1fa}</destination>
-			<destination>{5902c172-c7aa-4f42-b62e-176af2b4d89a}</destination>
-			<destination>{66fd14f7-d761-4d0a-928c-a93b29ca49d1}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{97b9dc54-1fbb-49ce-9ecb-6c59fd1751a8}</destination>
@@ -101,6 +111,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{f7bd9d71-b62e-4946-9a31-9646c2d89e15}" />
+	<object class="SingleSound" id="{66fd14f7-d761-4d0a-928c-a93b29ca49d1}">
+		<property name="start">
+			<value>3</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{4e1c7006-fa5e-479b-bda1-41a6f855f050}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{5902c172-c7aa-4f42-b62e-176af2b4d89a}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{6c661d04-ef6f-4c3d-bf71-49171e1715b4}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{e0c3781f-5208-47fd-86a0-53051f4108ea}">
 		<relationship name="audioFile">
 			<destination>{c9cd6da2-04d6-4022-a73b-3f0eeeaa076b}</destination>
@@ -112,22 +138,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{ec1f3438-6601-4fb5-98ac-f19a7cac2356}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{5902c172-c7aa-4f42-b62e-176af2b4d89a}">
-		<property name="start">
-			<value>2</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{6c661d04-ef6f-4c3d-bf71-49171e1715b4}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{66fd14f7-d761-4d0a-928c-a93b29ca49d1}">
-		<property name="start">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{4e1c7006-fa5e-479b-bda1-41a6f855f050}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{296f610a-3ffa-4c9f-abd3-431d14f40f21}">

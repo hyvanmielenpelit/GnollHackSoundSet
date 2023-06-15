@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{ae96eba3-f62a-45e5-8ff7-68c89ce61a51}">
 		<property name="name">
 			<value>Advice</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{2883ed28-d916-49c8-86da-e8358cdd8202}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{d9ce5f3f-109f-4803-87b1-e347327cbf6f}</destination>
 		</relationship>
@@ -60,13 +63,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{07fc0a9b-e5eb-4875-8bb7-4175435bfdbe}" />
-	<object class="MarkerTrack" id="{3076606a-7b0e-4520-b31e-b4d683e4675f}" />
+	<object class="MarkerTrack" id="{3076606a-7b0e-4520-b31e-b4d683e4675f}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{64637cc8-513b-450a-a884-7190e7aec915}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
-			<destination>{288c3175-aa46-4453-868f-70c753dc350a}</destination>
 			<destination>{7613c1dc-1ef7-426e-9231-e7baa4325052}</destination>
-			<destination>{03497cc1-3c4b-4170-b54a-13cd711ed05d}</destination>
 			<destination>{57fc3162-12b1-4d31-822a-7ff70883ec3d}</destination>
+			<destination>{288c3175-aa46-4453-868f-70c753dc350a}</destination>
+			<destination>{03497cc1-3c4b-4170-b54a-13cd711ed05d}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{09c2c0fe-273e-46c4-867e-34c72a2b34b1}</destination>
@@ -75,10 +85,10 @@
 	<object class="Timeline" id="{baadbb46-1419-4934-9097-0ba4e4ea1132}" />
 	<object class="ParameterProxy" id="{ec1d7622-50f5-4ba9-8622-d7903f0a2551}">
 		<relationship name="modules">
-			<destination>{288c3175-aa46-4453-868f-70c753dc350a}</destination>
 			<destination>{7613c1dc-1ef7-426e-9231-e7baa4325052}</destination>
-			<destination>{03497cc1-3c4b-4170-b54a-13cd711ed05d}</destination>
 			<destination>{57fc3162-12b1-4d31-822a-7ff70883ec3d}</destination>
+			<destination>{288c3175-aa46-4453-868f-70c753dc350a}</destination>
+			<destination>{03497cc1-3c4b-4170-b54a-13cd711ed05d}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{97b9dc54-1fbb-49ce-9ecb-6c59fd1751a8}</destination>
@@ -101,11 +111,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{3bc8ec7b-bb28-4bc0-9161-f4176229b519}" />
-	<object class="SingleSound" id="{288c3175-aa46-4453-868f-70c753dc350a}">
-		<relationship name="audioFile">
-			<destination>{53c71fc1-42ab-47b1-8ff3-17de8dcf6d0a}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{7613c1dc-1ef7-426e-9231-e7baa4325052}">
 		<property name="start">
 			<value>1</value>
@@ -114,20 +119,25 @@
 			<destination>{a955e58f-2bb4-4c83-8c94-87f599a71135}</destination>
 		</relationship>
 	</object>
-	<object class="SingleSound" id="{03497cc1-3c4b-4170-b54a-13cd711ed05d}">
-		<property name="start">
-			<value>2</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{11e467d5-2064-41df-8d17-98e0ff6e78f0}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{57fc3162-12b1-4d31-822a-7ff70883ec3d}">
 		<property name="start">
 			<value>3</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{ea2271fe-be0f-4301-86a4-b41a7fbfe359}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{288c3175-aa46-4453-868f-70c753dc350a}">
+		<relationship name="audioFile">
+			<destination>{53c71fc1-42ab-47b1-8ff3-17de8dcf6d0a}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{03497cc1-3c4b-4170-b54a-13cd711ed05d}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{11e467d5-2064-41df-8d17-98e0ff6e78f0}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{09c2c0fe-273e-46c4-867e-34c72a2b34b1}">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{0060d6ac-19e3-42d7-8879-c7b21e1d9a9a}">
 		<property name="name">
 			<value>Advice</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{3c98a759-1d47-4ddb-a658-5ff970e66150}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{cce6d404-af4f-4f54-884b-5c29ec2c91cc}</destination>
 		</relationship>
@@ -60,13 +63,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{34bfee1a-a7e4-4551-ab31-72bdb089c091}" />
-	<object class="MarkerTrack" id="{6cfba052-7b59-42cd-ae8d-d6626a4b2b8d}" />
+	<object class="MarkerTrack" id="{6cfba052-7b59-42cd-ae8d-d6626a4b2b8d}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{38097607-36e5-45ff-bc30-7152fae92ccd}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
+			<destination>{43dd6867-fb7d-405f-9ddd-afda16d28d30}</destination>
+			<destination>{dba4e1d2-837b-412f-96b6-66fcf2a85cb4}</destination>
 			<destination>{b9c23c57-c26e-4650-be58-cc155ba22075}</destination>
 			<destination>{3961b754-322f-44c2-a2ce-78f87960e1ad}</destination>
-			<destination>{dba4e1d2-837b-412f-96b6-66fcf2a85cb4}</destination>
-			<destination>{43dd6867-fb7d-405f-9ddd-afda16d28d30}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{6f4f4d5e-6aff-42d7-b008-e6afec82d43b}</destination>
@@ -75,10 +85,10 @@
 	<object class="Timeline" id="{416cb253-fdce-4b1f-b7fc-12131d4fb9de}" />
 	<object class="ParameterProxy" id="{f43a092b-6876-4fde-ba2c-69c11f8481b0}">
 		<relationship name="modules">
-			<destination>{b9c23c57-c26e-4650-be58-cc155ba22075}</destination>
-			<destination>{3961b754-322f-44c2-a2ce-78f87960e1ad}</destination>
-			<destination>{dba4e1d2-837b-412f-96b6-66fcf2a85cb4}</destination>
 			<destination>{43dd6867-fb7d-405f-9ddd-afda16d28d30}</destination>
+			<destination>{dba4e1d2-837b-412f-96b6-66fcf2a85cb4}</destination>
+			<destination>{3961b754-322f-44c2-a2ce-78f87960e1ad}</destination>
+			<destination>{b9c23c57-c26e-4650-be58-cc155ba22075}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{97b9dc54-1fbb-49ce-9ecb-6c59fd1751a8}</destination>
@@ -101,6 +111,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{ae73a165-8b6c-4a56-ab37-9f8c792dc443}" />
+	<object class="SingleSound" id="{43dd6867-fb7d-405f-9ddd-afda16d28d30}">
+		<property name="start">
+			<value>3</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{95422d1c-da99-4741-88c7-c9b88ce046f9}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{dba4e1d2-837b-412f-96b6-66fcf2a85cb4}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{f48cbab2-ea75-4369-ada5-fc0579418d8c}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{b9c23c57-c26e-4650-be58-cc155ba22075}">
 		<relationship name="audioFile">
 			<destination>{483e0539-8497-4013-950e-edd4197e208d}</destination>
@@ -112,22 +138,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{0b249b7f-6ade-4914-8326-73cb0e666eb8}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{dba4e1d2-837b-412f-96b6-66fcf2a85cb4}">
-		<property name="start">
-			<value>2</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{f48cbab2-ea75-4369-ada5-fc0579418d8c}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{43dd6867-fb7d-405f-9ddd-afda16d28d30}">
-		<property name="start">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{95422d1c-da99-4741-88c7-c9b88ce046f9}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{6f4f4d5e-6aff-42d7-b008-e6afec82d43b}">

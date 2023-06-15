@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{2391e8ca-bcaa-459c-a87c-9592f9ea4c4b}">
 		<property name="name">
 			<value>Alter Pay</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{fc7bc6af-3e49-435c-b497-968e7c8d0bc4}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{da586ee7-d21f-443e-8cdd-af30cf13f595}</destination>
 		</relationship>
@@ -60,11 +63,18 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7281b55a-0642-430c-9e1e-e511553494cb}" />
-	<object class="MarkerTrack" id="{0e081155-42e3-4745-ab0b-72e79c3d5052}" />
+	<object class="MarkerTrack" id="{0e081155-42e3-4745-ab0b-72e79c3d5052}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{b328fb01-c965-4ec9-b33b-bb06de101c3b}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
-			<destination>{c9c178bc-624f-428c-9e55-53432c777be7}</destination>
 			<destination>{dfc98d40-5d5b-4244-9298-fd0b287eb6d4}</destination>
+			<destination>{c9c178bc-624f-428c-9e55-53432c777be7}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{a1fcf218-f4ff-4b52-961f-32c69a308433}</destination>
@@ -73,8 +83,8 @@
 	<object class="Timeline" id="{3d31b433-9c22-4c1e-8513-10621b26a9c6}" />
 	<object class="ParameterProxy" id="{091b7c48-e357-4a17-9e60-76ada884eb62}">
 		<relationship name="modules">
-			<destination>{c9c178bc-624f-428c-9e55-53432c777be7}</destination>
 			<destination>{dfc98d40-5d5b-4244-9298-fd0b287eb6d4}</destination>
+			<destination>{c9c178bc-624f-428c-9e55-53432c777be7}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{b101facb-076b-4388-8857-d1516a1a62e2}</destination>
@@ -97,14 +107,6 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{09562cae-874a-466b-ba0c-ba7c0feefaae}" />
-	<object class="EventSound" id="{c9c178bc-624f-428c-9e55-53432c777be7}">
-		<relationship name="parameters">
-			<destination>{7116f785-1912-4df1-9a96-45cd5a1206a6}</destination>
-		</relationship>
-		<relationship name="event">
-			<destination>{cc02b93a-22df-4744-915b-426ed9b17969}</destination>
-		</relationship>
-	</object>
 	<object class="EventSound" id="{dfc98d40-5d5b-4244-9298-fd0b287eb6d4}">
 		<property name="start">
 			<value>1</value>
@@ -114,6 +116,14 @@
 		</relationship>
 		<relationship name="event">
 			<destination>{3ddd7392-d926-4497-9f90-890abfbb8b48}</destination>
+		</relationship>
+	</object>
+	<object class="EventSound" id="{c9c178bc-624f-428c-9e55-53432c777be7}">
+		<relationship name="parameters">
+			<destination>{7116f785-1912-4df1-9a96-45cd5a1206a6}</destination>
+		</relationship>
+		<relationship name="event">
+			<destination>{cc02b93a-22df-4744-915b-426ed9b17969}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{a1fcf218-f4ff-4b52-961f-32c69a308433}">
@@ -137,14 +147,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{fd3a2227-3481-4354-bee9-369873799729}" />
 	<object class="MixerBusFader" id="{521eef3a-1624-4b97-9ed2-9e138b2460ae}" />
-	<object class="ParameterProperty" id="{7116f785-1912-4df1-9a96-45cd5a1206a6}">
-		<relationship name="parameter">
-			<destination>{d476a18f-494c-4818-b546-013eb238b071}</destination>
-		</relationship>
-	</object>
 	<object class="ParameterProperty" id="{a98d3eac-0ab8-4257-9455-be9a3f3e43d3}">
 		<relationship name="parameter">
 			<destination>{d1171755-3163-4234-be93-09a9323fac3a}</destination>
+		</relationship>
+	</object>
+	<object class="ParameterProperty" id="{7116f785-1912-4df1-9a96-45cd5a1206a6}">
+		<relationship name="parameter">
+			<destination>{d476a18f-494c-4818-b546-013eb238b071}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusEffectChain" id="{eb0d498c-9c98-4e2b-bd6e-1679f91252f9}">

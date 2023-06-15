@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{bd3bd5f0-3793-423d-a24a-26a1540d2f21}">
 		<property name="name">
 			<value>Advice</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{f63d439f-52a1-4b07-9ec8-0ada2086175b}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{c1b235bd-3aa7-417c-93c8-ca92eccd42bd}</destination>
 		</relationship>
@@ -60,13 +63,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{71bdc1ef-c880-4487-aad0-d99ce22c4c34}" />
-	<object class="MarkerTrack" id="{fd43595c-9266-4e3d-b29d-d66864ab9afa}" />
+	<object class="MarkerTrack" id="{fd43595c-9266-4e3d-b29d-d66864ab9afa}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{b5116418-2f96-4596-8371-934b972a5c6a}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
+			<destination>{550b216d-da52-41af-a541-9ef73015cb2d}</destination>
+			<destination>{fe850d81-f799-4da3-b077-8bd7690b69e1}</destination>
 			<destination>{04301266-302b-4fcb-b09e-7a7698f79f66}</destination>
 			<destination>{e59219bc-6c88-46b1-b7b1-c6442e13fab6}</destination>
-			<destination>{fe850d81-f799-4da3-b077-8bd7690b69e1}</destination>
-			<destination>{550b216d-da52-41af-a541-9ef73015cb2d}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{adede32d-4145-4e2f-b65e-76dcb448867b}</destination>
@@ -75,10 +85,10 @@
 	<object class="Timeline" id="{942b7a09-60fb-410c-97c3-df95f9536bca}" />
 	<object class="ParameterProxy" id="{2041b0d1-760c-48b0-87e3-75a98ab568fc}">
 		<relationship name="modules">
+			<destination>{550b216d-da52-41af-a541-9ef73015cb2d}</destination>
+			<destination>{fe850d81-f799-4da3-b077-8bd7690b69e1}</destination>
 			<destination>{04301266-302b-4fcb-b09e-7a7698f79f66}</destination>
 			<destination>{e59219bc-6c88-46b1-b7b1-c6442e13fab6}</destination>
-			<destination>{fe850d81-f799-4da3-b077-8bd7690b69e1}</destination>
-			<destination>{550b216d-da52-41af-a541-9ef73015cb2d}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{97b9dc54-1fbb-49ce-9ecb-6c59fd1751a8}</destination>
@@ -101,6 +111,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{7c9626ff-b891-463e-9446-97f033edbb44}" />
+	<object class="SingleSound" id="{550b216d-da52-41af-a541-9ef73015cb2d}">
+		<property name="start">
+			<value>3</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{8e1e455d-b618-4cbd-b38b-705e4790b916}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{fe850d81-f799-4da3-b077-8bd7690b69e1}">
+		<property name="start">
+			<value>2</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{bd098508-6bac-445f-92e5-90e6bbcc8de3}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{04301266-302b-4fcb-b09e-7a7698f79f66}">
 		<relationship name="audioFile">
 			<destination>{5c671c25-bb37-4cdd-9d9c-d76047e99fdc}</destination>
@@ -112,22 +138,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{c1f665ec-3a9b-40b6-8f13-3532c4b5849f}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{fe850d81-f799-4da3-b077-8bd7690b69e1}">
-		<property name="start">
-			<value>2</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{bd098508-6bac-445f-92e5-90e6bbcc8de3}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{550b216d-da52-41af-a541-9ef73015cb2d}">
-		<property name="start">
-			<value>3</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{8e1e455d-b618-4cbd-b38b-705e4790b916}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{adede32d-4145-4e2f-b65e-76dcb448867b}">

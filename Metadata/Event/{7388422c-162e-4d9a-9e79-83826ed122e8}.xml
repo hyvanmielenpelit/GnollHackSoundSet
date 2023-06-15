@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.02.00.00">
+<objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{7388422c-162e-4d9a-9e79-83826ed122e8}">
 		<property name="name">
 			<value>Item Trading</value>
@@ -44,6 +44,9 @@
 		</relationship>
 	</object>
 	<object class="MasterTrack" id="{6ef63fcb-4f3a-4d51-b157-0ea5d843d308}">
+		<property name="uiTrackHeight">
+			<value>28</value>
+		</property>
 		<relationship name="mixerGroup">
 			<destination>{1e09d3f2-82e7-4176-a347-fb486120547b}</destination>
 		</relationship>
@@ -60,13 +63,20 @@
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{efa33976-25d1-4b51-a12c-96a8c9d1bdca}" />
-	<object class="MarkerTrack" id="{50155455-dd2b-48e8-9938-86618609d957}" />
+	<object class="MarkerTrack" id="{50155455-dd2b-48e8-9938-86618609d957}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
+	</object>
 	<object class="GroupTrack" id="{6c642584-8af9-4147-aba2-be138216d86a}">
+		<property name="uiTrackHeight">
+			<value>100</value>
+		</property>
 		<relationship name="modules">
+			<destination>{d0762af1-3e8b-495e-95f8-83d9d6c819ce}</destination>
+			<destination>{86d7c536-8f4c-44a1-afe5-9fc4319088f3}</destination>
 			<destination>{a9cc290f-9c20-4f86-921f-6983888b073b}</destination>
 			<destination>{7b793949-4cad-47eb-902d-09b6dceb5234}</destination>
-			<destination>{86d7c536-8f4c-44a1-afe5-9fc4319088f3}</destination>
-			<destination>{d0762af1-3e8b-495e-95f8-83d9d6c819ce}</destination>
 		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{72f944e3-03f7-47d8-aab8-7f4e0a7c34b1}</destination>
@@ -75,10 +85,10 @@
 	<object class="Timeline" id="{82c86584-13e3-49ac-8a7c-127e861925d9}" />
 	<object class="ParameterProxy" id="{3474ff81-7509-4a2c-bda8-e43bdecf10f9}">
 		<relationship name="modules">
-			<destination>{a9cc290f-9c20-4f86-921f-6983888b073b}</destination>
-			<destination>{7b793949-4cad-47eb-902d-09b6dceb5234}</destination>
-			<destination>{86d7c536-8f4c-44a1-afe5-9fc4319088f3}</destination>
 			<destination>{d0762af1-3e8b-495e-95f8-83d9d6c819ce}</destination>
+			<destination>{86d7c536-8f4c-44a1-afe5-9fc4319088f3}</destination>
+			<destination>{7b793949-4cad-47eb-902d-09b6dceb5234}</destination>
+			<destination>{a9cc290f-9c20-4f86-921f-6983888b073b}</destination>
 		</relationship>
 		<relationship name="preset">
 			<destination>{97b9dc54-1fbb-49ce-9ecb-6c59fd1751a8}</destination>
@@ -101,6 +111,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{66902a88-2a8e-4a3b-9da4-635bb4af0619}" />
+	<object class="SingleSound" id="{d0762af1-3e8b-495e-95f8-83d9d6c819ce}">
+		<property name="start">
+			<value>18</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{a343b7bf-a417-4ba1-8887-c908806f3fd8}</destination>
+		</relationship>
+	</object>
+	<object class="SingleSound" id="{86d7c536-8f4c-44a1-afe5-9fc4319088f3}">
+		<property name="start">
+			<value>17</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{e4888bcd-e229-4f3d-9a97-585b4edb3bea}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{a9cc290f-9c20-4f86-921f-6983888b073b}">
 		<property name="start">
 			<value>15</value>
@@ -115,22 +141,6 @@
 		</property>
 		<relationship name="audioFile">
 			<destination>{256f4009-3066-4b6e-83b0-7744ae22c31c}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{86d7c536-8f4c-44a1-afe5-9fc4319088f3}">
-		<property name="start">
-			<value>17</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{e4888bcd-e229-4f3d-9a97-585b4edb3bea}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{d0762af1-3e8b-495e-95f8-83d9d6c819ce}">
-		<property name="start">
-			<value>18</value>
-		</property>
-		<relationship name="audioFile">
-			<destination>{a343b7bf-a417-4ba1-8887-c908806f3fd8}</destination>
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{72f944e3-03f7-47d8-aab8-7f4e0a7c34b1}">
