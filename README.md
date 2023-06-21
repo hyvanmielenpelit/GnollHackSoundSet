@@ -10,12 +10,14 @@ GnollHack FMOD project file and assets.
 4. Select **File → Build All Platforms...**
 5. Built sound banks will appear in the `Build` directory of the GnollHackSoundSet repository.
 
-There are two flavors of sound banks: **desktop** and **mobile**. They will be in their respective subdirectories `Desktop` and `Mobile` under the `Build` directory. There are 4 sound banks in each directory:
+There are two flavors of sound banks: **desktop** and **mobile**. They will be in their respective subdirectories `Desktop` and `Mobile` under the `Build` directory. There are 6 sound banks in each directory:
 
 - Master.bank
 - Master.strings.bank
 - Intro.bank
 - Auxiliary.bank
+- Music.bank
+- Preliminary.bank
 
 The **desktop banks** are meant for the **desktop version** of GnollHack (Windows) and the **mobile banks** are meant for the **Android and iOS versions** of the game.
 
