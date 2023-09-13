@@ -4,7 +4,7 @@
 
 ### Eric Matyas
 
-Contact: https://soundimage.org
+**Contact:** https://soundimage.org
 
 - Clock-Maker-the-Hero.mp3
 - Dark-Fantasy-Open.mp3
@@ -33,14 +33,14 @@ Contact: https://soundimage.org
 
 ### Yolanda Mott
 
-Contact: https://yolandamott.weebly.com
+**Contact:** https://yolandamott.weebly.com
 
 - A Elbereth Gilthoniel.wav
 
 
-### Hyv‰n mielen pelit ry (Sound Mind Games) / Avalkis
+### Hyv√§n mielen pelit ry (Sound Mind Games) / Avalkis
 
-Contact: https://hyvanmielenpelit.fi
+**Contact:** https://hyvanmielenpelit.fi
 
 - Avalkis_-_A_New_Path_FINAL.mp3
 - Forest_Celebration_FINAL.mp3
@@ -50,16 +50,16 @@ Contact: https://hyvanmielenpelit.fi
 
 ### ZapSplat
 
-Contact: https://www.zapslat.com
+**Contact:** https://www.zapslat.com
 
 - All sound effects unless specified otherwise
 
 
 ## Voice Overs
 
-### Hyv‰n mielen pelit ry (Sound Mind Games)
+### Hyv√§n mielen pelit ry (Sound Mind Games)
 
-Contact: https://hyvanmielenpelit.fi
+**Contact:** https://hyvanmielenpelit.fi
 
 - All voice overs
 
