@@ -5,7 +5,7 @@ GnollHack FMOD project file and assets.
 ## Building Sound Banks
 
 1. Clone GnollHackSoundSet repository.
-2. Install [FMOD Studio](https://www.fmod.com/) **2.02.15**. *(Please use this exact version.)*
+2. Install [FMOD Studio](https://www.fmod.com/) **2.02.26**. *(Please use this exact version.)*
 3. Open **GnollHackSoundset.fspro** project in the main directory of the GnollHackSoundSet repository using **FMOD Studio**.
 4. Select **File → Build All Platforms...**
 5. Built sound banks will appear in the `Build` directory of the GnollHackSoundSet repository.
